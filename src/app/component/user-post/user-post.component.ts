@@ -24,7 +24,7 @@ export class UserPostComponent implements OnInit {
       data => {
         this.users = data[0];
         this.userPosts = data[1];
-        this.userPostsCombined = this.combine(this.users,this.userPosts)
+        this.userPostsCombined = this.combine(this.userPosts,this.users)
       }
     );
   }
@@ -35,10 +35,9 @@ export class UserPostComponent implements OnInit {
       z[i].name ="";
       for (var j=0;j<y.length;j++){
         if (x[i].id === y[j].id) {
-          z[i].title = y[j].title;
-          z[i].body = y[j].body;
+          z[i].username = y[j].username;
+          z[i].email = y[j].email;
 
-          console.log(z[i].name)
 
         }
       }
