@@ -34,7 +34,7 @@ export class UserPostComponent implements OnInit {
     for (var i=0;i<x.length; i++){
       z[i].name ="";
       for (var j=0;j<y.length;j++){
-        if (x[i].id === y[j].id) {
+        if (x[i].id === y[j].userId) {
           z[i].username = y[j].username;
           z[i].email = y[j].email;
 
