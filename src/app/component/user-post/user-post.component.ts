@@ -13,6 +13,7 @@ export class UserPostComponent implements OnInit {
   users= [];
   userPostsCombined= [];
   txtSearch = "";
+  title = "User Post";
   constructor(private userService: UsersService, private userPostsService: UserPostsService) { }
 
   ngOnInit() {

@@ -5,6 +5,13 @@
   padding: 0;
 }
 
+.searchBox{
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+
+}
+
+
 .chat li
 {
   margin-bottom: 10px;
@@ -37,6 +44,9 @@
 .panel-body
 {
   height: 100px;
+  min-height: 10;
+  max-height: 10;
+  overflow-y: scroll;
 }
 
 ::-webkit-scrollbar-track
